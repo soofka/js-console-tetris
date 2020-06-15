@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <title>js-console-tetris</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="content-language" content="en"/>
+    <meta name="author" content="Jakub Sowiński <pansoofka@gmail.com> (https://soofka.pl)"/>
+    <meta name="keywords" content="tetris, javascript, console, game"/>
+    <meta name="description" content="JS console tetris"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="googlebot" content="index,follow"/>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-variant: normal;
+        line-height: normal;
+        background: #fcf6f5;
+        color: #990011;
+      }
+
+      .wrapper {
+        width: auto;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+      main {
+        padding: 12px 0;
+      }
+
+      section {
+        padding: 0 0 12px 0;
+      }
+
+      h1 {
+        font-size: 28px;
+        margin: 0 0 20px 0;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin: 0 0 16px 0;
+      }
+
+      h3 {
+        font-size: 20px;
+        margin: 0 0 14px 0;
+      }
+
+      p, ol li, ul li {
+        font-size: 16px;
+      }
+      
+      ol li, ul li {
+        margin: 0 0 6px 0;
+      }
+
+      p, ol, ul {
+        margin: 0 0 14px 0;
+      }
+
+      small {
+        font-size: 12px;
+        margin: 0 0 8px 0;
+      }
+
+      a, a:visited {
+        color: #990011;
+        text-decoration: underline;
+      }
+
+      a:hover, a:active {
+        color: #5e010b;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><code>js-console-tetris</code></h1>
+        <h3><i>Tetris game written in JS that runs in JS console in your browser.</i></h3>
+      </header>
+      <main>
+        <section>
+          <h2>How to start the game</h2>
+          <ol>
+            <li>Open JS console in your browser.</li>
+            <li>Enter <code>Tetris.start()</code> to start the game.</li>
+            <li>Click on the page to make sure that mouse focus is here.</li>
+          </ol>
+        </section>
+        <section>
+          <h2>How to play the game</h2>
+          <ul>
+            <li>Use left and right arrow keys to move tetrinos.</li>
+            <li>Use up arrow key to rotate tetrino.</li>
+            <li>Use down arrow key to drop tetrino.</li>
+            <li>Press space bar to pause.</li>
+            <li>Enter <code>Tetris.stop()</code> to stop the game.</li>
+            <li>Enter <code>Tetris.restart()</code> to restart the game.</li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <p><small>made with <code>&lt;3</code> by <a href="https://soofka.pl" target="_blank">soofka</a> | <a href="https://github.com/soofka/js-console-tetris" target="_blank">repo</a></small></p>
+      </footer>
+    </div>
+    <script src="tetris.js"></script>
+  </body>
+</html>

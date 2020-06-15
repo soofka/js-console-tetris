@@ -12,7 +12,7 @@ const GameConfig = {
 		DROP_TETRINO: 'ArrowDown',
 		PAUSE: 'Space',
 	},
-}
+};
 
 const Directions = {
 	Top: 0,
