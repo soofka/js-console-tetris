@@ -1,5 +1,6 @@
 const { Directions } = require('./constants');
 const Matrix = require('./matrix');
+const Point = require('./point');
 const Tetrino = require('./tetrino');
 
 class Board {
@@ -12,7 +13,15 @@ class Board {
 	reset() {
 		this.matrix = new Matrix(this.sizeX, this.sizeY);
 		this.tetrino = undefined;
-    this.nextTetrino = new Tetrino();
+    	this.nextTetrino = new Tetrino();
+	}
+
+	moveTetrinoIntoPosition(tetrinoToMove) {
+		var newTertino = tetrinoToMove;
+		newTertino.calculateMovement();
+		var coords = newTertino.getCoordinates().map(coordinate => new Point(coordinate.x + Math.floor( (this.sizeX/2)) -2, coordinate.y))
+		newTertino.setCoordinates(coords);
+		return newTertino ;
 	}
 
 	getTetrino() {
@@ -32,7 +41,7 @@ class Board {
 	}
 
 	spawnTetrino() {
-		this.tetrino = this.nextTetrino;
+		this.tetrino = this.moveTetrinoIntoPosition(this.nextTetrino);
     this.nextTetrino = new Tetrino();
     this.drawTetrinoOnMatrix();
   }
