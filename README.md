@@ -5,7 +5,7 @@ Tetris game written in JS that runs in JS console in your browser. Live demo ava
 
 ## TODO
 ### Gameplay
-- spawn tetrinos at the middle of X axis
+- ~~spawn tetrinos at the middle of X axis~~
 - spawn all tetrinos at the very top of the board
 
 ### Technicalities
