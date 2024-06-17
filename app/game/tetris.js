@@ -1,12 +1,10 @@
-const GameController = require('./controller');
+import { Controller } from "./controller.js";
 
-class Tetris {
-  constructor() {
-
-  }
+export class Tetris {
+  constructor() {}
 
   start(config) {
-    this.gameController = new GameController(config);
+    this.gameController = new Controller(config);
     this.gameController.start();
   }
 
@@ -23,5 +21,3 @@ class Tetris {
     this.gameController.start();
   }
 }
-
-module.exports = Tetris;

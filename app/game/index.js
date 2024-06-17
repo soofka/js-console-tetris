@@ -1,9 +1,9 @@
-const { GameConfig } = require('./constants');
-window.TETRIS_CONFIG = GameConfig;
+import { Tetris } from "./tetris.js";
+import { GameConfig } from "./constants.js";
 
-const Tetris = require('./tetris');
 const tetris = new Tetris();
 
+window.TETRIS_CONFIG = GameConfig;
 window.Tetris = {
   start: () => tetris.start(window.TETRIS_CONFIG),
   stop: () => tetris.stop(),
