@@ -4,7 +4,11 @@
 
 https://heuristic-blackwell-1f16f5.netlify.app/
 
+<!---description_start-->
+
 Tetris game written in JS that runs in JS console in your browser.
+
+<!---description_end-->
 
 ## todo
 
